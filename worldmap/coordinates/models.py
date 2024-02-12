@@ -29,6 +29,9 @@ class MapObject(models.Model):
         auto_now=True,
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         verbose_name = "объект на карте"
         verbose_name_plural = "объекты на карте"
